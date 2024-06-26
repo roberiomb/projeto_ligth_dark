@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/night.jpg);
+  flex-direction: column;
+  transition: .5s;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffff;
+  margin-bottom: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.trilho {
+  width: 350px;
+  height: 150px;
+  background-color: #464646;
+  border-radius: 150px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 2px 8px  rgb(120, 119, 119);
+  
+}
+.img {
+  width: 150px;
+  display: none;
+}
+
+.trilho .indicador {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transform: scale(0.9);
+  position: absolute;
+  left: 0;
+  transition: 0.5s;
+  background-image: url(/img/Iconarchive-Fairy-Tale-Dark-Moon.256.png);
+  
+}
+
+.trilho.dark .indicador {
+  left: 200px;
+  background-image: url(/img/Oxygen-Icons.org-Oxygen-Status-weather-clear.256.png);
+ 
+}
+
+.trilho.dark {
+  background-color: #c3c3c3;
+}
+
+body.dark{
+  background-image: url(/img/day.jpg);
+  
+}
+
+
